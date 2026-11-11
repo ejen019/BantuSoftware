@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>BantuSoftware — Logiciels d'élite pour les business d'Afrique</title>
+<meta name="description" content="BantuSoftware conçoit des SaaS mobile-first, payables par Mobile Money, pour les PME et les professionnels d'Afrique francophone.">
+<meta property="og:title" content="BantuSoftware — Logiciels d'élite pour les business d'Afrique">
+<meta property="og:description" content="SaaS mobile-first, payables par Mobile Money. Conçus en Afrique, pour les business d'Afrique.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_BJ">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config = { theme: { extend: { fontFamily: {
+  display: ['Orbitron','Space Grotesk','sans-serif'],
+  sans: ['Space Grotesk','system-ui','sans-serif'] } } } }
+</script>
+<style>
+  :root { box-sizing: border-box; padding-top: env(safe-area-inset-top,0px); padding-bottom: env(safe-area-inset-bottom,0px); }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; background:#000; }
+  body { background:#000; color:#fff; -webkit-font-smoothing:antialiased; }
+  .grid-bg { background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 56px 56px; -webkit-mask-image: radial-gradient(ellipse at 50% 30%, #000 20%, transparent 75%); mask-image: radial-gradient(ellipse at 50% 30%, #000 20%, transparent 75%); }
+  .card { transition: border-color .3s, transform .3s; }
+  .card:hover { border-color: rgba(255,255,255,.4); transform: translateY(-3px); }
+  .reveal { opacity:0; transform: translateY(16px); transition: opacity .7s, transform .7s; }
+  .reveal.in { opacity:1; transform:none; }
+  .badge-live { background: rgba(16,185,129,.12); color: #10b981; border: 1px solid rgba(16,185,129,.35); }
+  .badge-soon { background: rgba(251,191,36,.08); color: #fbbf24; border: 1px solid rgba(251,191,36,.3); }
+  .badge-draft { background: rgba(255,255,255,.04); color: rgba(255,255,255,.4); border: 1px solid rgba(255,255,255,.1); }
+  @media (prefers-reduced-motion: reduce){ .reveal{opacity:1;transform:none;transition:none} html{scroll-behavior:auto} }
+</style>
+</head>
+<body class="font-sans font-light">
+
+<!-- NAV -->
+<header class="fixed top-0 inset-x-0 z-50 backdrop-blur bg-black/70 border-b border-white/10" style="padding-top:env(safe-area-inset-top,0px)">
+  <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3" aria-label="BantuSoftware">
+      <svg viewBox="150 150 310 240" class="w-9 h-8" fill="none" stroke="#fff" stroke-width="14" stroke-linejoin="round">
+        <path d="M170 170 V370 H245 A30 30 0 0 0 275 340 V300 A30 30 0 0 0 245 270 H170 M245 270 A30 30 0 0 0 275 240 V200 A30 30 0 0 0 245 170 H170"/>
+        <path d="M435 170 H360 A30 30 0 0 0 330 200 V240 A30 30 0 0 0 360 270 H410 A30 30 0 0 1 440 300 V340 A30 30 0 0 1 410 370 H330"/>
+      </svg>
+      <span class="hidden sm:block font-display text-xs tracking-[.3em] text-white/80">BANTUSOFTWARE</span>
+    </a>
+    <nav class="flex items-center gap-6 text-xs tracking-widest uppercase text-white/60">
+      <a href="#philosophie" class="hover:text-white transition hidden sm:block">Philosophie</a>
+      <a href="#solutions" class="hover:text-white transition hidden sm:block">Solutions</a>
+      <a href="#contact" class="border border-white/30 px-4 py-2 hover:bg-white hover:text-black transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="relative min-h-[100svh] flex items-center justify-center overflow-hidden px-5 pt-24 pb-16">
+  <div class="grid-bg absolute inset-0"></div>
+  <div class="relative max-w-4xl text-center">
+    <p class="reveal font-display text-[10px] sm:text-xs tracking-[.5em] text-white/50 mb-8">STUDIO SAAS · AFRIQUE</p>
+    <h1 class="reveal font-display font-bold text-4xl sm:text-6xl md:text-7xl tracking-[.08em] leading-tight">BantuSoftware</h1>
+    <p class="reveal mt-8 max-w-2xl mx-auto text-base sm:text-xl text-white/60 leading-relaxed">
+      Nous remplaçons les carnets papier et les relances WhatsApp par des logiciels d'élite.
+      <span class="text-white">Conçus en Afrique, pour les business d'Afrique.</span>
+    </p>
+    <div class="reveal mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#solutions" class="bg-white text-black px-8 py-4 text-xs tracking-[.25em] uppercase font-medium hover:bg-white/85 transition">Découvrir nos solutions</a>
+      <a href="https://wa.me/2290151049095" target="_blank" rel="noopener" class="border border-white/30 px-8 py-4 text-xs tracking-[.25em] uppercase hover:border-white transition">Discuter sur WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHIE -->
+<section id="philosophie" class="border-t border-white/10 px-5 py-24 sm:py-36">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-12 gap-10">
+    <div class="md:col-span-4 reveal">
+      <p class="font-display text-[10px] tracking-[.5em] text-white/40 mb-4">01 — PHILOSOPHIE</p>
+      <h2 class="font-display text-2xl sm:text-3xl leading-snug tracking-wide">Pourquoi BantuSoftware ?</h2>
+    </div>
+    <div class="md:col-span-8 reveal space-y-6 text-lg sm:text-xl text-white/60 leading-relaxed">
+      <p class="text-white">À chaque fois qu'un métier gère son activité avec un cahier et des messages WhatsApp, il perd de l'argent.</p>
+      <p>Nous créons des outils sur-mesure, accessibles sur smartphone, payables par Mobile Money (MTN MoMo, Moov), pour automatiser vos tâches quotidiennes.</p>
+      <div class="grid grid-cols-3 gap-px bg-white/10 border border-white/10 mt-10 text-center">
+        <div class="bg-black py-6"><p class="font-display text-lg text-white">Mobile</p><p class="text-xs text-white/40 mt-1 tracking-widest uppercase">first</p></div>
+        <div class="bg-black py-6"><p class="font-display text-lg text-white">MoMo</p><p class="text-xs text-white/40 mt-1 tracking-widest uppercase">paiement</p></div>
+        <div class="bg-black py-6"><p class="font-display text-lg text-white">Mensuel</p><p class="text-xs text-white/40 mt-1 tracking-widest uppercase">abordable</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTIONS -->
+<section id="solutions" class="border-t border-white/10 px-5 py-24 sm:py-36">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal mb-16">
+      <p class="font-display text-[10px] tracking-[.5em] text-white/40 mb-4">02 — CATALOGUE V1</p>
+      <h2 class="font-display text-2xl sm:text-3xl tracking-wide">Nos solutions</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-5">
+
+      <!-- BantuWatt -->
+      <article class="card reveal border border-white/15 p-8 flex flex-col">
+        <div class="flex items-center justify-between">
+          <span class="font-display text-xs text-white/30">/01</span>
+          <span class="badge-live text-[10px] tracking-[.2em] uppercase px-2 py-0.5 rounded-full">Live</span>
+        </div>
+        <svg class="w-9 h-9 mt-8 mb-6" viewBox="0 0 40 40" fill="none" stroke="#10b981" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M22 4 L10 22 H20 L18 36 L30 18 H20 Z"/>
+        </svg>
+        <h3 class="font-display text-lg tracking-wider">BantuWatt</h3>
+        <p class="mt-4 text-white/55 leading-relaxed flex-1">
+          Fini les coupures surprises SBEE. Suivi du crédit de votre compteur prépayé et alertes WhatsApp avant épuisement.
+        </p>
+        <div class="mt-6 flex gap-2 text-[10px] tracking-[.2em] uppercase text-white/40">
+          <span>Bénin</span><span>·</span><span>Essai 14j</span>
+        </div>
+        <a href="https://bantuwatt.vercel.app" target="_blank" rel="noopener" class="mt-6 text-xs tracking-[.25em] uppercase text-white/70 hover:text-white">Visiter →</a>
+      </article>
+
+      <!-- Pronostics foot -->
+      <article class="card reveal border border-white/15 p-8 flex flex-col">
+        <div class="flex items-center justify-between">
+          <span class="font-display text-xs text-white/30">/02</span>
+          <span class="badge-soon text-[10px] tracking-[.2em] uppercase px-2 py-0.5 rounded-full">Bientôt</span>
+        </div>
+        <svg class="w-9 h-9 mt-8 mb-6" viewBox="0 0 40 40" fill="none" stroke="#fff" stroke-width="1.5" stroke-linejoin="round">
+          <circle cx="20" cy="20" r="14"/>
+          <path d="M20 10 L24 14 L22 20 L18 20 L16 14 Z M20 10 L16 14 M24 14 L30 15 M16 14 L10 15 M22 20 L26 26 M18 20 L14 26"/>
+        </svg>
+        <h3 class="font-display text-lg tracking-wider">BantuPronos</h3>
+        <p class="mt-4 text-white/55 leading-relaxed flex-1">
+          Scraping, analyse statistique et prédictions assistées par IA. Scores, paramètres clés, coupons gratuits et premium.
+        </p>
+        <div class="mt-6 flex gap-2 text-[10px] tracking-[.2em] uppercase text-white/40">
+          <span>Décembre 2026</span>
+        </div>
+        <a href="#contact" class="mt-6 text-xs tracking-[.25em] uppercase text-white/70 hover:text-white">Être prévenu →</a>
+      </article>
+
+      <!-- Lévites -->
+      <article class="card reveal border border-white/15 p-8 flex flex-col">
+        <div class="flex items-center justify-between">
+          <span class="font-display text-xs text-white/30">/03</span>
+          <span class="badge-live text-[10px] tracking-[.2em] uppercase px-2 py-0.5 rounded-full">Déployé</span>
+        </div>
+        <svg class="w-9 h-9 mt-8 mb-6" viewBox="0 0 40 40" fill="none" stroke="#3ECF8E" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round">
+          <circle cx="20" cy="20" r="15"/>
+          <path d="M20 11 V29 M13 17 H27"/>
+        </svg>
+        <h3 class="font-display text-lg tracking-wider">Lévites</h3>
+        <p class="mt-4 text-white/55 leading-relaxed flex-1">
+          Gestion des servants de messe : cotisations, caisses, paiements et historique. En production à la Cathédrale Saint-Sauveur de Natitingou, adaptable à toute paroisse.
+        </p>
+        <div class="mt-6 flex gap-2 text-[10px] tracking-[.2em] uppercase text-white/40">
+          <span>Bénin</span><span>·</span><span>Pilote paroissial</span>
+        </div>
+        <a href="https://levites-eight.vercel.app" target="_blank" rel="noopener" class="mt-6 text-xs tracking-[.25em] uppercase text-white/70 hover:text-white">Visiter →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- QUI -->
+<section id="qui" class="border-t border-white/10 px-5 py-24 sm:py-36">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-12 gap-10">
+    <div class="md:col-span-4 reveal">
+      <p class="font-display text-[10px] tracking-[.5em] text-white/40 mb-4">03 — QUI</p>
+      <h2 class="font-display text-2xl sm:text-3xl leading-snug tracking-wide">Fondé par un ingénieur béninois.</h2>
+    </div>
+    <div class="md:col-span-8 reveal space-y-6 text-lg sm:text-xl text-white/60 leading-relaxed">
+      <p class="text-white">Jean-Paul N'DAYAKE, 20 ans, diplômé en Architecture Logicielle à ESGIS Bénin (2026).</p>
+      <p>BantuSoftware n'est pas une agence externe. C'est un studio produit qui construit, lance et maintient ses propres SaaS. Chaque solution a été pensée pour un vrai problème observé sur le terrain, en Afrique de l'Ouest.</p>
+      <p class="text-white/80">Lévites tourne déjà en production. Prochaine étape : la bêta publique de BantuWatt en novembre 2026, puis un second SaaS grand public avant fin décembre.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER / CONTACT -->
+<footer id="contact" class="border-t border-white/10 px-5 py-20">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal">
+      <p class="font-display text-[10px] tracking-[.5em] text-white/40 mb-4">04 — CONTACT</p>
+      <h2 class="font-display text-2xl sm:text-3xl tracking-wide mb-10">Parlons de votre business.</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5 reveal">
+      <a href="https://wa.me/2290151049095" target="_blank" rel="noopener" class="card border border-white/15 p-6 flex flex-col gap-3 hover:border-white/40 transition">
+        <svg class="w-6 h-6 text-white/70" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 3.4 17.8L2 22l4.3-1.4A11 11 0 1 0 20.5 3.5Zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-2.6.8.9-2.5-.2-.3A9 9 0 1 1 12 20.5Zm5-6.7c-.3-.1-1.6-.8-1.8-.9s-.4-.1-.6.2-.7.8-.9 1-.3.1-.6 0a7.3 7.3 0 0 1-3.7-3.2c-.3-.5.3-.5.8-1.6a.5.5 0 0 0 0-.5c0-.1-.6-1.5-.8-2s-.4-.5-.6-.5h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4.1c.6.3 1.1.4 1.5.5a3.5 3.5 0 0 0 1.6.1 2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.2-.2-.4-.3Z"/></svg>
+        <p class="text-xs tracking-[.25em] uppercase text-white/40">WhatsApp Business</p>
+        <p class="text-white">+229 01 51 04 90 95</p>
+      </a>
+
+      <a href="mailto:jndayake@gmail.com" class="card border border-white/15 p-6 flex flex-col gap-3 hover:border-white/40 transition">
+        <svg class="w-6 h-6 text-white/70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 7 9-7"/></svg>
+        <p class="text-xs tracking-[.25em] uppercase text-white/40">Email</p>
+        <p class="text-white">jndayake@gmail.com</p>
+      </a>
+
+      <a href="https://github.com/ejen019" target="_blank" rel="noopener" class="card border border-white/15 p-6 flex flex-col gap-3 hover:border-white/40 transition">
+        <svg class="w-6 h-6 text-white/70" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7c-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.8 1a9.5 9.5 0 0 1 5 0c2-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.8v2.6c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
+        <p class="text-xs tracking-[.25em] uppercase text-white/40">GitHub</p>
+        <p class="text-white">@ejen019</p>
+      </a>
+    </div>
+
+    <div class="mt-16 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 border-t border-white/10 pt-10">
+      <div>
+        <p class="font-display text-sm tracking-[.3em] text-white/60">BANTUSOFTWARE</p>
+        <p class="text-xs text-white/40 mt-2">Natitingou, Bénin · fr_BJ</p>
+      </div>
+      <p class="text-xs text-white/40 tracking-wider">© 2026 BantuSoftware — Propulsé par l'agilité et l'IA.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((es)=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }), {threshold:.12});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{ el.style.transitionDelay = (i%3)*80+'ms'; io.observe(el); });
+</script>
+</body>
+</html>

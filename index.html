@@ -10,7 +10,10 @@
 <meta property="og:description" content="SaaS mobile-first, payables par Mobile Money. Conçus en Afrique, pour les business d'Afrique.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_BJ">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#000000">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
@@ -96,68 +99,73 @@ tailwind.config = { theme: { extend: { fontFamily: {
 <section id="solutions" class="border-t border-white/10 px-5 py-24 sm:py-36">
   <div class="max-w-6xl mx-auto">
     <div class="reveal mb-16">
-      <p class="font-display text-[10px] tracking-[.5em] text-white/40 mb-4">02 — CATALOGUE V1</p>
+      <p class="font-display text-[10px] tracking-[.5em] text-white/40 mb-4">02 — CATALOGUE</p>
       <h2 class="font-display text-2xl sm:text-3xl tracking-wide">Nos solutions</h2>
     </div>
-    <div class="grid md:grid-cols-3 gap-5">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
       <!-- BantuWatt -->
       <article class="card reveal border border-white/15 p-8 flex flex-col">
         <div class="flex items-center justify-between">
           <span class="font-display text-xs text-white/30">/01</span>
-          <span class="badge-live text-[10px] tracking-[.2em] uppercase px-2 py-0.5 rounded-full">Live</span>
+          <span class="badge-soon text-[10px] tracking-[.2em] uppercase px-2 py-0.5 rounded-full">Bêta</span>
         </div>
-        <svg class="w-9 h-9 mt-8 mb-6" viewBox="0 0 40 40" fill="none" stroke="#10b981" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round">
-          <path d="M22 4 L10 22 H20 L18 36 L30 18 H20 Z"/>
-        </svg>
+        <img src="/assets/bantuwatt.png" alt="Logo BantuWatt" width="56" height="56" class="w-14 h-14 mt-8 mb-6 rounded-xl ring-1 ring-white/10 bg-black" loading="lazy">
         <h3 class="font-display text-lg tracking-wider">BantuWatt</h3>
-        <p class="mt-4 text-white/55 leading-relaxed flex-1">
-          Fini les coupures surprises SBEE. Suivi du crédit de votre compteur prépayé et alertes WhatsApp avant épuisement.
-        </p>
-        <div class="mt-6 flex gap-2 text-[10px] tracking-[.2em] uppercase text-white/40">
-          <span>Bénin</span><span>·</span><span>Essai 14j</span>
-        </div>
-        <a href="https://bantuwatt.vercel.app" target="_blank" rel="noopener" class="mt-6 text-xs tracking-[.25em] uppercase text-white/70 hover:text-white">Visiter →</a>
+        <p class="mt-4 text-white/55 leading-relaxed flex-1">Fini les coupures surprises SBEE. Suivi du crédit de votre compteur prépayé et alertes WhatsApp avant épuisement.</p>
+        <div class="mt-6 flex gap-2 text-[10px] tracking-[.2em] uppercase text-white/40"><span>Bénin</span><span>·</span><span>Essai 14 j</span></div>
+        <a href="https://bantuwatt.vercel.app" target="_blank" rel="noopener" class="mt-6 group">
+          <span class="text-xs tracking-[.25em] uppercase text-white/70 group-hover:text-white">Visiter →</span>
+          <span class="block mt-1 text-[11px] text-white/35 group-hover:text-white/60 break-all">bantuwatt.vercel.app</span>
+        </a>
       </article>
 
-      <!-- Pronostics foot -->
+      <!-- BantuPronos -->
       <article class="card reveal border border-white/15 p-8 flex flex-col">
         <div class="flex items-center justify-between">
           <span class="font-display text-xs text-white/30">/02</span>
-          <span class="badge-soon text-[10px] tracking-[.2em] uppercase px-2 py-0.5 rounded-full">Bientôt</span>
+          <span class="badge-live text-[10px] tracking-[.2em] uppercase px-2 py-0.5 rounded-full">Live</span>
         </div>
-        <svg class="w-9 h-9 mt-8 mb-6" viewBox="0 0 40 40" fill="none" stroke="#fff" stroke-width="1.5" stroke-linejoin="round">
-          <circle cx="20" cy="20" r="14"/>
-          <path d="M20 10 L24 14 L22 20 L18 20 L16 14 Z M20 10 L16 14 M24 14 L30 15 M16 14 L10 15 M22 20 L26 26 M18 20 L14 26"/>
-        </svg>
+        <img src="/assets/bantupronos.png" alt="Logo BantuPronos" width="56" height="56" class="w-14 h-14 mt-8 mb-6 rounded-xl ring-1 ring-white/10 bg-black" loading="lazy">
         <h3 class="font-display text-lg tracking-wider">BantuPronos</h3>
-        <p class="mt-4 text-white/55 leading-relaxed flex-1">
-          Scraping, analyse statistique et prédictions assistées par IA. Scores, paramètres clés, coupons gratuits et premium.
-        </p>
-        <div class="mt-6 flex gap-2 text-[10px] tracking-[.2em] uppercase text-white/40">
-          <span>Décembre 2026</span>
+        <p class="mt-4 text-white/55 leading-relaxed flex-1">Pronostics football calculés chaque jour par un modèle statistique : 8 compétitions, classements, coupons et recommandations.</p>
+        <div class="mt-6 flex gap-2 text-[10px] tracking-[.2em] uppercase text-white/40"><span>Afrique</span><span>·</span><span>Essai 3 j</span></div>
+        <a href="https://bantu-pronos.vercel.app" target="_blank" rel="noopener" class="mt-6 group">
+          <span class="text-xs tracking-[.25em] uppercase text-white/70 group-hover:text-white">Visiter →</span>
+          <span class="block mt-1 text-[11px] text-white/35 group-hover:text-white/60 break-all">bantu-pronos.vercel.app</span>
+        </a>
+      </article>
+
+      <!-- BantuCouture -->
+      <article class="card reveal border border-white/15 p-8 flex flex-col">
+        <div class="flex items-center justify-between">
+          <span class="font-display text-xs text-white/30">/03</span>
+          <span class="badge-live text-[10px] tracking-[.2em] uppercase px-2 py-0.5 rounded-full">Live</span>
         </div>
-        <a href="#contact" class="mt-6 text-xs tracking-[.25em] uppercase text-white/70 hover:text-white">Être prévenu →</a>
+        <img src="/assets/bantucouture.png" alt="Logo BantuCouture" width="56" height="56" class="w-14 h-14 mt-8 mb-6 rounded-xl ring-1 ring-white/10 bg-black" loading="lazy">
+        <h3 class="font-display text-lg tracking-wider">BantuCouture</h3>
+        <p class="mt-4 text-white/55 leading-relaxed flex-1">L'application des ateliers de couture : mesures des clients, commandes, acomptes et relances WhatsApp quand la tenue est prête.</p>
+        <div class="mt-6 flex gap-2 text-[10px] tracking-[.2em] uppercase text-white/40"><span>Ateliers</span><span>·</span><span>Essai 14 j</span></div>
+        <a href="https://bantu-couture.vercel.app" target="_blank" rel="noopener" class="mt-6 group">
+          <span class="text-xs tracking-[.25em] uppercase text-white/70 group-hover:text-white">Visiter →</span>
+          <span class="block mt-1 text-[11px] text-white/35 group-hover:text-white/60 break-all">bantu-couture.vercel.app</span>
+        </a>
       </article>
 
       <!-- Lévites -->
       <article class="card reveal border border-white/15 p-8 flex flex-col">
         <div class="flex items-center justify-between">
-          <span class="font-display text-xs text-white/30">/03</span>
+          <span class="font-display text-xs text-white/30">/04</span>
           <span class="badge-live text-[10px] tracking-[.2em] uppercase px-2 py-0.5 rounded-full">Déployé</span>
         </div>
-        <svg class="w-9 h-9 mt-8 mb-6" viewBox="0 0 40 40" fill="none" stroke="#3ECF8E" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round">
-          <circle cx="20" cy="20" r="15"/>
-          <path d="M20 11 V29 M13 17 H27"/>
-        </svg>
+        <img src="/assets/levites.png" alt="Logo Lévites" width="56" height="56" class="w-14 h-14 mt-8 mb-6 rounded-xl ring-1 ring-white/10 bg-black" loading="lazy">
         <h3 class="font-display text-lg tracking-wider">Lévites</h3>
-        <p class="mt-4 text-white/55 leading-relaxed flex-1">
-          Gestion des servants de messe : cotisations, caisses, paiements et historique. En production à la Cathédrale Saint-Sauveur de Natitingou, adaptable à toute paroisse.
-        </p>
-        <div class="mt-6 flex gap-2 text-[10px] tracking-[.2em] uppercase text-white/40">
-          <span>Bénin</span><span>·</span><span>Pilote paroissial</span>
-        </div>
-        <a href="https://levites-eight.vercel.app" target="_blank" rel="noopener" class="mt-6 text-xs tracking-[.25em] uppercase text-white/70 hover:text-white">Visiter →</a>
+        <p class="mt-4 text-white/55 leading-relaxed flex-1">Gestion des servants de messe : cotisations, caisses, paiements et historique. En production à la Cathédrale Saint-Sauveur de Natitingou.</p>
+        <div class="mt-6 flex gap-2 text-[10px] tracking-[.2em] uppercase text-white/40"><span>Bénin</span><span>·</span><span>Paroisses</span></div>
+        <a href="https://levites-eight.vercel.app" target="_blank" rel="noopener" class="mt-6 group">
+          <span class="text-xs tracking-[.25em] uppercase text-white/70 group-hover:text-white">Visiter →</span>
+          <span class="block mt-1 text-[11px] text-white/35 group-hover:text-white/60 break-all">levites-eight.vercel.app</span>
+        </a>
       </article>
 
     </div>
@@ -174,7 +182,7 @@ tailwind.config = { theme: { extend: { fontFamily: {
     <div class="md:col-span-8 reveal space-y-6 text-lg sm:text-xl text-white/60 leading-relaxed">
       <p class="text-white">Jean-Paul N'DAYAKE, 20 ans, diplômé en Architecture Logicielle à ESGIS Bénin (2026).</p>
       <p>BantuSoftware n'est pas une agence externe. C'est un studio produit qui construit, lance et maintient ses propres SaaS. Chaque solution a été pensée pour un vrai problème observé sur le terrain, en Afrique de l'Ouest.</p>
-      <p class="text-white/80">Lévites tourne déjà en production. Prochaine étape : la bêta publique de BantuWatt en novembre 2026, puis un second SaaS grand public avant fin décembre.</p>
+      <p class="text-white/80">Quatre solutions sont en ligne : BantuPronos, BantuCouture, Lévites et BantuWatt, en bêta publique depuis novembre 2026. Prochaine étape : le paiement Mobile Money intégré dans chaque SaaS.</p>
     </div>
   </div>
 </section>

@@ -44,10 +44,7 @@ tailwind.config = { theme: { extend: { fontFamily: {
 <header class="fixed top-0 inset-x-0 z-50 backdrop-blur bg-black/70 border-b border-white/10" style="padding-top:env(safe-area-inset-top,0px)">
   <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
     <a href="#top" class="flex items-center gap-3" aria-label="BantuSoftware">
-      <svg viewBox="150 150 310 240" class="w-9 h-8" fill="none" stroke="#fff" stroke-width="14" stroke-linejoin="round">
-        <path d="M170 170 V370 H245 A30 30 0 0 0 275 340 V300 A30 30 0 0 0 245 270 H170 M245 270 A30 30 0 0 0 275 240 V200 A30 30 0 0 0 245 170 H170"/>
-        <path d="M435 170 H360 A30 30 0 0 0 330 200 V240 A30 30 0 0 0 360 270 H410 A30 30 0 0 1 440 300 V340 A30 30 0 0 1 410 370 H330"/>
-      </svg>
+      <img src="/assets/bantusoftware-icon.png" alt="" width="36" height="36" class="w-9 h-9 rounded-lg">
       <span class="hidden sm:block font-display text-xs tracking-[.3em] text-white/80">BANTUSOFTWARE</span>
     </a>
     <nav class="flex items-center gap-6 text-xs tracking-widest uppercase text-white/60">
@@ -218,7 +215,10 @@ tailwind.config = { theme: { extend: { fontFamily: {
 
     <div class="mt-16 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 border-t border-white/10 pt-10">
       <div>
-        <p class="font-display text-sm tracking-[.3em] text-white/60">BANTUSOFTWARE</p>
+        <div class="flex items-center gap-3">
+          <img src="/assets/bantusoftware-icon.png" alt="" width="32" height="32" class="w-8 h-8 rounded-lg" loading="lazy">
+          <p class="font-display text-sm tracking-[.3em] text-white/60">BANTUSOFTWARE</p>
+        </div>
         <p class="text-xs text-white/40 mt-2">Natitingou, Bénin · fr_BJ</p>
       </div>
       <p class="text-xs text-white/40 tracking-wider">© 2026 BantuSoftware — Propulsé par l'agilité et l'IA.</p>
